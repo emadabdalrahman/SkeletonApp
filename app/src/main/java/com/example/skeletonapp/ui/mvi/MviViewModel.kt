@@ -1,9 +1,9 @@
-package com.example.skeletonapp.ui_view_bind.mvi
+package com.example.skeletonapp.ui.mvi
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 
-@Suppress("PropertyName")
+@Suppress("PropertyName", "MemberVisibilityCanBePrivate")
 abstract class MviViewModel<Intent, ViewState> : ViewModel() {
 
     private val intentObserver = Observer<Intent> {
